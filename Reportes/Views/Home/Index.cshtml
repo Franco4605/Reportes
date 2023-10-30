@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Reporte de clientes</h2>
+<hr/>
+<form asp-action=" Exportar_excel" asp-controller="Home" method="post">
+
+    <div class="row align-items-end" >
+        <div class="col-sm-3">
+            <label class ="form-label">Fecha Inicio</label>
+            <input class="form-control" name="fechainicio" type="text"/>
+
+        </div>
+
+        <div class="col-sm-3">
+            <label class ="form-label">Fecha Fin</label>
+            <input class="form-control" name="fechafin" type="text"/>
+        </div>
+
+        <div class="col-sm-2">
+            <button class="btn btn-success" type="submit">Exportar Excel</button>
+        </div>
+
+
+    </div>
+
+</form>
